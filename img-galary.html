@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-8-css-grid</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel='stylesheet' href='https://unpkg.com/emoji.css/dist/emoji.min.css'>
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            background-color: rgb(24, 26, 50);
+            display: grid;
+            /* grid-template-columns: auto auto auto auto ; 
+         grid-template-rows: auto auto auto auto auto auto ; */
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(6,1fr);
+            /* padding: 10px; */
+            grid-gap: 10px;
+            max-width: 700px;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+        }
+        body{
+            display: flex;
+            background-color: rgb(24, 26, 50);
+            justify-content: center;
+            align-content: center;
+                 }
+
+        .container>div {
+            /* padding: 25px; */
+        overflow: hidden;
+        transition: all .5s ease;
+            /* background-color: rgb(255, 255, 255); */
+            
+        }
+        .container>div:hover{
+            transform: rotate(10deg) scale(1.1);
+        }
+
+        .img-res {
+            width: 100%;
+            height: auto;
+            display: block;
+
+        }
+        .child-1 {
+            grid-column: 1/3;
+            grid-row: 1/3;
+
+        }
+        .child-7 {
+            grid-column: 2/4;
+            grid-row: 3/5;
+
+        }
+
+        .child-13 {
+            grid-column: 3/span 2;
+            grid-row: 5/span 2;
+        }
+
+        .child-17 {
+            grid-column: 1/3;
+            grid-row: 7/9;
+        }
+
+        .child-21 {
+            grid-column: 1/3;
+            grid-row: 9/11;
+        }
+
+        .child-22 {
+            grid-column: 3/5;
+            grid-row: 9/11;
+        }
+
+        
+    </style>
+
+</head>
+
+<body>
+    <!-- <p>به گروه صنعتی ارکان فلز خوش آمدید</p> -->
+    <div class="container">
+        <div class="child-1"><img src="/img/5.jpg" class="img-res" alt=""></div>
+        <div class="child-2"><img src="/img/5.jpg" class="img-res" alt=""></div>
+        <div class="child-3"><img src="/img/5.jpg" class="img-res" alt=""></div>
+        <div class="child-4"><img src="/img/5.jpg" class="img-res" alt=""></div>
+        <div class="child-5"><img src="/img/5.jpg" class="img-res" alt=""></div>
+        <div class="child-6"><img src="/img/5.jpg" class="img-res" alt=""></div>
+        <div class="child-7"><img src="/img/5.jpg" class="img-res" alt=""></div>
+        <div class="child-8"><img src="/img/5.jpg" class="img-res" alt=""></div>
+        <div class="child-9"><img src="/img/5.jpg" class="img-res" alt=""></div>
+        <div class="child-10"><img src="/img/5.jpg" class="img-res" alt=""></div>
+        <div class="child-11"><img src="/img/5.jpg" class="img-res" alt=""></div>
+        <div class="child-12"><img src="/img/5.jpg" class="img-res" alt=""></div>
+        <div class="child-13"><img src="/img/5.jpg" class="img-res" alt=""></div>
+        <div class="child-14"><img src="/img/5.jpg" class="img-res" alt=""></div>
+        <div class="child-15"><img src="/img/5.jpg" class="img-res" alt=""></div>
+        <div class="child-16"><img src="/img/5.jpg" class="img-res" alt=""></div>
+        <div class="child-17"><img src="/img/5.jpg" class="img-res" alt=""></div>
+        <div class="child-18"><img src="/img/5.jpg" class="img-res" alt=""></div>
+        <div class="child-19"><img src="/img/5.jpg" class="img-res" alt=""></div>
+        <div class="child-20"><img src="/img/5.jpg" class="img-res" alt=""></div>
+        <div class="child-21"><img src="/img/5.jpg" class="img-res" alt=""></div>
+        <div class="child-22"><img src="/img/5.jpg" class="img-res" alt=""></div>
+
+
+    </div>
+
+</body>
+
+
+</html>
